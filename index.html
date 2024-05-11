@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="gl_matrix.js" defer></script>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <canvas id="background-i"></canvas>
+        <div id="background">
+            <div id="title">
+                <div style="font-size: 15px;">Created by Dmitri Wamback</div>
+            </div>
+            <div id="images">
+            </div>
+            <div id="images">
+
+                <div style="margin-top: 50px;" class="particletext confetti">This vacation made me feel <span style="font-style: italic;">____</span> mentally</div>
+                <ul>
+                    <li id="hoverable" class="button-list-1" onclick="test('button-list-1', false, this)">more good</li>
+                    <li id="hoverable" class="button-list-1" onclick="test('button-list-1', false, this)">more gooder</li>
+                    <li id="hoverable" class="button-list-1" onclick="test('button-list-1', false, this)">more better</li>
+                    <li id="hoverable" class="button-list-1" onclick="test('button-list-1', true,  this)">better</li>
+                    <li id="hoverable" class="button-list-1" onclick="test('button-list-1', false, this)">betterer</li>
+                    <li id="hoverable" class="button-list-1" onclick="test('button-list-1', false, this)">best</li>
+                </ul>
+                <div style="margin-top: 50px;">Russia is <span style="font-style: italic;">____</span> the Vatican City</div>
+                <ul>
+                    <li id="hoverable" class="button-list-2" onclick="test('button-list-2', false, this)">small than</li>
+                    <li id="hoverable" class="button-list-2" onclick="test('button-list-2', false, this)">smallest then</li>
+                    <li id="hoverable" class="button-list-2" onclick="test('button-list-2', false, this)">smaller than</li>
+                    <li id="hoverable" class="button-list-2" onclick="test('button-list-2', true,  this)">bigger than</li>
+                    <li id="hoverable" class="button-list-2" onclick="test('button-list-2', false, this)">biggest</li>
+                    <li id="hoverable" class="button-list-2" onclick="test('button-list-2', false, this)">the biggest then</li>
+                </ul>
+                <div style="margin-top: 50px;">After all the tension, she is slowly getting <span style="font-style: italic;">____</span></div>
+                <ul>
+                    <li id="hoverable" class="button-list-3" onclick="test('button-list-3', false, this)">worse and worse</li>
+                    <li id="hoverable" class="button-list-3" onclick="test('button-list-3', false, this)">calm and calm</li>
+                    <li id="hoverable" class="button-list-3" onclick="test('button-list-3', true,  this)">calmer and calmer</li>
+                    <li id="hoverable" class="button-list-3" onclick="test('button-list-3', false, this)">good and gooding</li>
+                    <li id="hoverable" class="button-list-3" onclick="test('button-list-3', false, this)">worst and worsen</li>
+                    <li id="hoverable" class="button-list-3" onclick="test('button-list-3', false, this)">awesomer</li>
+                </ul>
+
+                <div style="margin-top: 50px;">The more you study, <span style="font-style: italic;">____</span></div>
+                <ul>
+                    <li id="hoverable" class="button-list-4" onclick="test('button-list-4', false, this)">the more you'll fail</li>
+                    <li id="hoverable" class="button-list-4" onclick="test('button-list-4', false, this)">the much you are failing</li>
+                    <li id="hoverable" class="button-list-4" onclick="test('button-list-4', false, this)">the more you'll unfail</li>
+                    <li id="hoverable" class="button-list-4" onclick="test('button-list-4', false, this)">and you'll pass</li>
+                    <li id="hoverable" class="button-list-4" onclick="test('button-list-4', true,  this)">the more you will pass</li>
+                    <li id="hoverable" class="button-list-4" onclick="test('button-list-4', false, this)">the much more you are failing</li>
+                </ul>
+                <div style="margin-top: 50px;">Canada is much <span style="font-style: italic;">____</span> than Czechia</div>
+                <ul>
+                    <li id="hoverable" class="button-list-5" onclick="test('button-list-5', true,  this)">more rich</li>
+                    <li id="hoverable" class="button-list-5" onclick="test('button-list-5', false, this)">richest</li>
+                    <li id="hoverable" class="button-list-5" onclick="test('button-list-5', false, this)">rich</li>
+                    <li id="hoverable" class="button-list-5" onclick="test('button-list-5', false, this)">rick</li>
+                    <li id="hoverable" class="button-list-5" onclick="test('button-list-5', false, this)">richard</li>
+                    <li id="hoverable" class="button-list-5" onclick="test('button-list-5', true,  this)">richer</li>
+                </ul>
+
+                <div style="margin-top: 50px;">He is a lot <span style="font-style: italic;">____</span> talkative <span style="font-style: italic;">____</span> us</div>
+                <ul>
+                    <li id="hoverable" class="button-list-6" onclick="test('button-list-6', true,  this)">more ... than</li>
+                    <li id="hoverable" class="button-list-6" onclick="test('button-list-6', false, this)">most ... than</li>
+                    <li id="hoverable" class="button-list-6" onclick="test('button-list-6', false, this)">than ... more</li>
+                    <li id="hoverable" class="button-list-6" onclick="test('button-list-6', false, this)">more ... thank</li>
+                    <li id="hoverable" class="button-list-6" onclick="test('button-list-6', false, this)">more ... then</li>
+                    <li id="hoverable" class="button-list-6" onclick="test('button-list-6', false, this)">more ... think</li>
+                </ul>
+                <div style="margin-top: 50px;">They made me <span style="font-style: italic;">____</span> cheerful</div>
+                <ul>
+                    <li id="hoverable" class="button-list-7" onclick="test('button-list-7', false, this)">better and better</li>
+                    <li id="hoverable" class="button-list-7" onclick="test('button-list-7', false, this)">most and most</li>
+                    <li id="hoverable" class="button-list-7" onclick="test('button-list-7', true,  this)">more and more</li>
+                    <li id="hoverable" class="button-list-7" onclick="test('button-list-7', false, this)">less than less</li>
+                    <li id="hoverable" class="button-list-7" onclick="test('button-list-7', false, this)">most</li>
+                    <li id="hoverable" class="button-list-7" onclick="test('button-list-7', false, this)">ungood and ungreat</li>
+                </ul>
+                <div style="margin-top: 50px;">The better the results, <span style="font-style: italic;">____</span> they are</div>
+                <ul>
+                    <li id="hoverable" class="button-list-8" onclick="test('button-list-8', false, this)">the more discredited</li>
+                    <li id="hoverable" class="button-list-8" onclick="test('button-list-8', true,  this)">the more satisfactory</li>
+                    <li id="hoverable" class="button-list-8" onclick="test('button-list-8', false, this)">the less satisfactory</li>
+                    <li id="hoverable" class="button-list-8" onclick="test('button-list-8', false, this)">the ungoodening</li>
+                    <li id="hoverable" class="button-list-8" onclick="test('button-list-8', false, this)">goodeningestest</li>
+                    <li id="hoverable" class="button-list-8" onclick="test('button-list-8', false, this)">the worse</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <script defer>
+            function createParticle(x, y, e) {
+
+                const particle = document.createElement('particle');
+                
+                const size = Math.floor(Math.random() * 20 + 5);
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.background = `hsl(${Math.random() * 90 + 120}, 60%, 80%)`;
+
+                const destinationX = x + (Math.random() - 0.5) * 2 * 75;
+                const destinationY = y + (Math.random() - 0.5) * 2 * 75;
+
+                const animation = particle.animate([
+                    {
+                    
+                    transform: `translate(${x - (size / 2)}px, ${y - (size / 2)}px)`,
+                    opacity: 1
+                    },
+                    {
+                    
+                    transform: `translate(${destinationX}px, ${destinationY}px)`,
+                    opacity: 0
+                    }
+                ], {
+                    duration: 500 + Math.random() * 1000,
+                    easing: 'cubic-bezier(0, .9, .57, 1)',
+                    delay: Math.random() * 200
+                });
+                animation.onfinish = () => {
+                    particle.remove();
+                };
+
+                document.body.appendChild(particle);
+            }
+
+
+            function test(className, isRight, button) {
+
+                var e = window.event;
+
+
+                elements = document.getElementsByClassName(className)
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].style['color'] = 'rgb(255, 255, 255)'
+                    elements[i].style['font-weight'] = 400
+                }
+                if (isRight) {
+                    button.style['color'] = 'rgb(0, 255, 0)'
+                }
+                else {
+                    button.style['color'] = 'rgb(255, 0, 0)'
+                }
+                button.style['font-weight'] = 600
+            }
+
+            document.addEventListener('click', function(e) {
+                for (let i = 0; i < 30; i++) {
+                    createParticle(e.clientX, e.clientY, e);
+                }
+            })
+        </script>
+    </body>
+</html>
